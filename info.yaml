@@ -25,7 +25,7 @@ project:
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
   # Inputs
-  ui[0]: ""
+  ui[0]: "rx"
   ui[1]: ""
   ui[2]: ""
   ui[3]: ""
@@ -35,8 +35,8 @@ pinout:
   ui[7]: ""
 
   # Outputs
-  uo[0]: ""
-  uo[1]: ""
+  uo[0]: "tx"
+  uo[1]: "pdm_out"
   uo[2]: ""
   uo[3]: ""
   uo[4]: ""
