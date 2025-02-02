@@ -3,7 +3,7 @@ project:
   title:        "Workshop demo"
   author:       "Tommy Thorn"
   discord:      "tommythorn"
-  description:  "Just a demo"
+  description:  "A really bad UART driven DAC"
   language:     "Verilog"
   clock_hz:     50000000
 
