@@ -9,12 +9,16 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-It's magic
+A Sigma-Delta PDM emits on `uo_out[1]`.  A UART listens for bytes (8N1 115,200 assuming clk is 50 MHz)
+and shifts that into the lower 8-bit of a 16-bit level.
 
 ## How to test
 
-Connect the TX pin to your favorite terminal (more to be written)
+TBD: It is possible to drive bitbanged serial output from the onboard RP2020.  The PDM output can be observed
+on a scope or filtered to get a smooth analogue signal.  It makes for a lousy DAC as at best you can update it
+115,200/10/2 = 5760 times a second and the updates aren't atomic (thus will have artifacts).  It's just a
+proof-of-concept.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+Scope and/or analogue filter.
